@@ -1,0 +1,275 @@
+ body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("fond/f19.jpg");
+}
+
+.image1 {
+    display: flex;
+    justify-content: center;
+}
+
+ .colonne {
+    
+    
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: oklch(98.797% 0.00808 91.492);
+    
+
+ }
+
+   /* barre de navigation*/
+
+.marque {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    margin-left: 30px;
+    gap: 5px;
+     
+    
+}
+
+.nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  
+    border-bottom: 3mm ridge rgba(167, 168, 133, 0.6);
+    background-color: oklch(98.797% 0.00808 91.492);
+     
+    
+
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+.image1 img {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.navbar li {
+    margin-left: 85px;
+    margin-right: 85px;
+    
+}
+
+.navbar li a {
+    color: rgb(61, 54, 33);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.navbar li a:hover {
+    color: 815936;
+    
+}
+
+.navbar li a.active {
+   color: #815936;
+   text-decoration: underline;
+   text-underline-offset: 30px;
+   text-decoration-thickness: 2px;
+   
+   
+
+}
+
+ span {
+ 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
+    font-style: italic;
+     font-size: 40px;
+    color: #553c28;
+    font-weight: bold;
+    
+     
+}
+
+
+.span  {
+    display: flex;
+    align-items: center;
+  
+   
+}
+
+
+
+/*texte*/
+h1 { 
+    padding-top: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
+    font-size: 50px;
+    color: hsl(29, 38%, 25%);
+}
+
+/* Notre équipe */
+.team {
+    padding: 60px 20px 100px;
+    text-align: center;
+}
+
+.team .lead {
+    color: hsl(29, 20%, 40%);
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+    gap: 28px;
+    align-items: start;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: rgba(255,255,255,0.85);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.103);
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.team-member img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+.team-member h3 {
+    margin: 6px 0 4px 0;
+    font-size: 20px;
+}
+
+.team-member .role {
+    color: #866549;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.team-member .bio {
+    color: hsl(30, 11%, 47%);
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.team-member:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);
+
+}
+
+
+/* Organigramme simple */
+.org { padding: 40px 20px; text-align: center; }
+.org h2 { margin-bottom: 14px; color: hsl(29, 38%, 25%); }
+.org-chart { position: relative; max-width: 900px; margin: 0 auto; }
+.org-row { margin-bottom: 18px; }
+.org-row.middle { display: flex; justify-content: center; align-items: flex-start; gap: 60px; }
+.org-block { width: 220px; display: flex; flex-direction: column; align-items: center; }
+.org-block.parent-block { margin-right: 0; }
+.org-block.side-block { margin-left: 0; }
+.org-children { display: flex; justify-content: center; gap: 28px; margin-top: 12px; position: relative; padding-top: 0; }
+.org-children::before { display: none; }
+.org-node { background: var(--node-bg, rgba(255,255,255,0.95)); color: var(--node-text, #553c28); display: inline-block; padding: 12px 18px; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.06); border: 1px solid #e6d9c8; }
+.org-node.top { margin-bottom: 22px; }
+
+/* Color utility classes: add one of these classes to a node, or set inline variables: style="--node-bg:#fff; --node-text:#333;" */
+.node-rose { 
+    --node-bg: hsl(320, 89%, 89%); 
+    --node-text: #6b3f2b; 
+    margin-top: 20px;
+    width: 150px; 
+    height: 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);}
+    
+
+.node-yellow {
+     --node-bg: #fdf4a5; 
+     --node-text: #5a3f2e; 
+     margin-bottom: 25px; 
+     width: 150px; 
+     height: 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);}
+
+.node-mauve { 
+    --node-bg: #e9baff; 
+    --node-text: #225a3d; 
+    width: 150px;
+     height: 40px ;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);}
+
+.node-green { 
+    --node-bg: #c8ffa8;
+     --node-text: #6b2e3c; 
+     width: 150px;
+    height: 40px ; 
+    margin-left : -12px; 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);}
+
+.node-blue { 
+    --node-bg:hsl(199, 100%, 88%); 
+    --node-text:#7a3b1c; 
+    width: 150px; 
+    height: 40px ; 
+    margin-left : -13px;
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.199);}
+
+.org-node:hover{
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.308);
+}
+
+
+.org-node .post { display: block; font-size: 13px; color: hsl(29, 20%, 40%); text-transform: uppercase; letter-spacing: 0.6px; }
+.org-node .name { display: block; margin-top: 6px; color: #553c28; font-weight: 700; }
+
+/* connectors (removed per request) */
+.org-node.parent::after { display: none; }
+.org-node.child { position: relative; }
+.org-node.child::before { display: none; }
+
+.org-node.side { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+
+
+
+.team a {
+    color:#553c28;
+    text-decoration: none;
+    
+ 
+}
+
+
+.org a {
+    color: #553c28;
+    text-decoration: none;
+   
+    
+}
